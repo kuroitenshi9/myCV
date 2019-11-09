@@ -96,7 +96,7 @@ main section:not(:last-child)  {
   text-transform: capitalize;
   font-weight: bold;
 }
-.school span {
+.school span, .job span {
   color: rgb(17, 143, 27);
   font-style: italic;
   font-weight: normal;
@@ -111,6 +111,11 @@ ul > li {
 }
 ul.list-dashed > li::before {
   content: "🐍";
+  padding-right: 0.5em;
+}
+
+ul.job-description > li:before{
+  content: "💬";
   padding-right: 0.5em;
 }
 footer {
