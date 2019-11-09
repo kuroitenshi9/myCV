@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 
 body {
   margin: 0;
   font-size: 16px;
   line-height: 1.8em;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 article {
@@ -25,7 +25,7 @@ header {
   text-align: center;
   color: whitesmoke;
   background-size: cover;
-  background-image: url('./img/bg.jpg');
+  background-image: url("./img/bg.jpg");
   background-position: fixed;
 }
 
@@ -66,20 +66,44 @@ main section:not(:last-child)  {
   font-weight: bold;
 }
 
-.course .descrition {
+.course .description {
   -ms-flex: 0 0 66.6%;
   flex: 0 0 66.6%;
   max-width: 66.6%
 }
 
-.course .descrition p {
+.course .description p {
   padding-left: 1em;
 }
+.skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
 
+.skills .column {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
 .school span {
   color: #A7B8BF;
 }
-
+ul {
+  margin: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul.list-dashed > li {
+  padding-left: 1.5em;
+}
+ul.list-dashed > li::before {
+  content: "🐍";
+  padding-right: 0.5em;
+}
 footer {
  padding: 1em;
 }
