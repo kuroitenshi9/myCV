@@ -7,6 +7,12 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+a:hover {
+  color: opacity: 0.5;;
+}
+a:visited {
+  color: #A7B8BF;
+}
 article {
   padding:0 1em;
 }
@@ -120,4 +126,7 @@ ul.job-description > li:before{
 }
 footer {
  padding: 1em;
+ text-align: right;
+ color: whitesmoke;
+ background-color: #415a54;
 }
