@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway");
 
+
 body {
   margin: 0;
   font-size: 16px;
@@ -54,7 +55,6 @@ h1, h3 {
   margin: 1em 0;
   text-transform: uppercase;
 }
-
 main {
   max-width: 1140px;
 }
@@ -67,7 +67,15 @@ main section:not(:last-child)  {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+@media only screen and (max-width: 768px) {
+  .course {
+    display: block;
+  }
 
+  .course .title, .course .descrition {
+    max-width: 100%;
+  }
+}
 .course .title {  
   -ms-flex: 0 0 33.3%;
   flex: 0 0 33.3%;
@@ -129,4 +137,27 @@ footer {
  text-align: right;
  color: whitesmoke;
  background-color: #415a54;
+}
+@media only screen and (max-width: 768px) {
+  .course {
+    display: block;
+  }
+
+  .course .title, .course .description {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .skills {
+    display: block;
+  }
+
+  .skills .column {
+    max-width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
 }
